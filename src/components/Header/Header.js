@@ -4,26 +4,31 @@ import logo from '../../assets/img/nav-logo.png';
 const Countries = [
   {
     id: 'a1',
+    ref: '#/a1',
     name: 'Singapore',
     src: "https://static-staging.venuerific.com/packs/media/img/sg-99531698f90954f8c0dcb80daecdc2d8.png"
   },
   {
     id: 'a2',
+    ref: '#/a2',
     name: 'Malaysia',
     src: "https://static-staging.venuerific.com/packs/media/img/my-221a445c68db7c9ff4cbb5d9ba7db6be.png"
   },
   {
     id: 'a3',
+    ref: '#/a3',
     name: 'Indonesia',
     src: "https://static-staging.venuerific.com/packs/media/img/id-81394ed473d60bcc17db29d463dff7d6.png"
   },
   {
     id: 'a4',
+    ref: '#/a4',
     name: 'Philippines',
     src: "https://static-staging.venuerific.com/packs/media/img/ph-98aa829210389c80ee7eece4bdc3dd91.png"
   },
   {
     id: 'a5',
+    ref: '#/a5',
     name: 'Hong Kong',
     src: "https://static-staging.venuerific.com/packs/media/img/hk-585fb76ecf1cf61fd5d823417b123b7a.png"
   }
@@ -41,18 +46,25 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <NavDropdown title={
-                <img className="shadow-sm flag-img"
-                  src="https://static-staging.venuerific.com/packs/media/img/sg-99531698f90954f8c0dcb80daecdc2d8.png" alt="" />
-              } id="basic-nav-dropdown">
+            <Nav className="me-auto">
+              <NavDropdown title="Dropdown" id="country-list">
                 {Countries.map((country) =>
-                  <NavDropdown.Item href="/#" key={country.id}>
+                  <NavDropdown.Item href={country.ref} key={country.id}>
                     <img className="shadow-sm flag-img"
                       src={country.src} alt="" />
                     {country.name}
                   </NavDropdown.Item>
                 )}
+              </NavDropdown>
+              <Nav.Link href="#home">Venue</Nav.Link>
+              <Nav.Link href="#link">Inspiration</Nav.Link>
+              <NavDropdown title="Solutions" id="solutions">
+                <NavDropdown.Item href="#action/3.1">Venue Lead Generation</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Content Production</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Venuerific Pay</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">The Virtual Background</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">The Virtual Wedding</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.6">Venue Management Cloud Solution</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
