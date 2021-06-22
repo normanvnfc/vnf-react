@@ -1,0 +1,287 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+
+  .flex-wrapper,
+  .inline-flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+  }
+
+  .nav-main {
+    @media only screen and (max-width: 768px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .logo {
+      height: 25px;
+      margin-right: 10px;
+
+      @media only screen and (max-width: 768px) {
+        height: 20px;
+        margin-right: 5px;
+        margin-top: -5px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .country-selector {
+      @media only screen and (max-width: 768px) {
+        margin-right: auto;
+      }
+
+      .flag-img {
+        height: 13px;
+      }
+    }
+
+    .menu {
+      .nav-item {
+        padding-left: 15px;
+
+        a {
+          font-size: 14px;
+          font-weight: 700;
+          color: $color-nero;
+          border-bottom: 2px solid transparent;
+
+          &:hover {
+            color: $color-royalBlue;
+            border-bottom: 2px solid $color-royalBlue;
+          }
+        }
+      }
+    }
+
+    .right-menu {
+      @media only screen and (max-width: 768px) {
+        position: absolute;
+        right: 10px;
+      }
+
+      .nav-item {
+        padding-left: 15px;
+        font-size: 14px;
+
+        .list-venue {
+          color: #28b4ce;
+
+          i {
+            font-size: .9em;
+          }
+        }
+
+        .login {
+          color: #f05b47;
+          border-bottom: 2px solid transparent;
+
+          &:hover {
+            color: #f05b47;
+            border-bottom: 2px solid #f05b47;
+          }
+        }
+
+        .signup {
+          color: $color-nero;
+          border-bottom: 2px solid transparent;
+        }
+      }
+    }
+
+    .user-avatar {
+      padding-top: 0;
+
+      @media only screen and (max-width: 768px) {
+        margin-right: 15px;
+      }
+
+      .avatar {
+        height: 24px;
+        width: 24px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .dropdown-menu {
+        max-width: 300px;
+        left: -150px;
+
+        .usr-menu-wrapper {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 5px;
+          align-items: baseline;
+          position: relative;
+
+          .text-wrapper {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            // line-height: 15px;
+            color: #636C7C;
+
+            i {
+              margin-right: 5px;
+            }
+
+            &:hover {
+              * {
+                color: $color-royalBlue !important;
+              }
+            }
+          }
+
+          .badge-wrapper {
+            display: contents;
+          }
+
+          &.logout {
+            i {
+              color: #F46C5B;
+            }
+
+            span {
+              color: #F46C5B;
+            }
+          }
+
+          .badge {
+            padding: 2px 10px;
+            background-color: #F46C5B;
+            margin: 0;
+            height: 16px;
+          }
+
+        }
+      }
+    }
+
+    .notification {
+      position: relative;
+
+      .notif-dot {
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        background-color: #f05b47;
+        position: absolute;
+        right: 25px;
+        top: 10px;
+      }
+
+      .dropdown-menu {
+        max-width: 450px;
+        left: -415px;
+        padding-bottom: 0;
+
+        .title {
+          padding-left: 20px;
+        }
+
+        .notif-wrapper {
+          display: flex;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-bottom: 2px solid #ccc;
+
+          .icon-wrapper {
+            color: #a5a6b0;
+            font-size: 28px;
+            padding-right: 10px;
+            border-right: 2px solid #ccc;
+          }
+
+          .text-wrapper {
+            margin-top: 5px;
+            padding-left: 10px;
+          }
+        }
+
+        // .dropdown-item {
+        //   &:last-child {
+        //     .notif-wrapper {
+        //       border-bottom: 2px solid transparent;
+        //     }
+        //   }
+        // }
+        .notification-more {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-weight: 600;
+          color: $color-royalBlue;
+          background-color: #F5F7FB;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .nav-mobile {
+    background-color: #2e383a;
+    font-size: .7em;
+    font-weight: 700;
+
+    .nav-link {
+      letter-spacing: .5px;
+      color: #fff;
+    }
+
+    .dropdown-menu {
+      top: 39px;
+      left: -56vw;
+    }
+  }
+
+  .nav-email {
+    .input-subject {
+      width: 35%;
+    }
+
+    .right-menu {
+      .nav-item {
+        padding-left: 0;
+        align-self: baseline;
+
+        button {
+          width: 7.5em;
+        }
+
+        .btn-orange {
+          border: 2px solid transparent;
+        }
+
+        .last-update {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.06em;
+          color: #353535;
+        }
+      }
+    }
+  }
+
+}
+
+.wrapper-back {
+  font-size: 14px;
+
+  &+.page-title-wrapper {
+    margin-top: 0 !important;
+  }
+}

@@ -1,11 +1,15 @@
-import Header from './components/Header/Header';
+import { Route, Switch } from 'react-router-dom';
+
 import './App.scss';
+import Why from './Pages/why';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+      <div>
+      <Switch>
+      <Route path="/" component={Why} exact />
+      </Switch>
+  </div>
   );
 }
 

@@ -1,0 +1,86 @@
+.search-result {
+
+  .aot-wrapper {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .page-title-wrapper {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .nav-action {
+    margin-bottom: 15px;
+    // position: sticky;
+    // top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    // z-index: 9999;
+    margin-top: 0;
+  }
+
+  .map-wrapper {
+    // position: sticky;
+    // top: 65px;
+    // z-index: 9999;
+
+    .collapse {
+      padding-bottom: 20px;
+      background-color: #fff;
+    }
+  }
+
+  .form-row {
+    .col {
+      min-width: 200px;
+    }
+  }
+
+  .single-venue-card {
+    margin-bottom: 30px;
+    padding-right: 5px;
+
+    .static-wrapper {
+      height: 100%;
+
+      .flex-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .scroll {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .button-wrapper {
+
+    .btn {
+      @media only screen and (max-width: 767px) {
+        margin-top: 0;
+        width: 48%;
+      }
+    }
+
+    .btn-map {
+      width: 25%;
+    }
+
+    .btn-like-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #9C9DA7;
+      text-align: left;
+      width: 70%;
+    }
+  }
+}

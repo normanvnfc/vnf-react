@@ -1,0 +1,124 @@
+.demo {
+  .asterisk {
+    color: #ff3e57;
+  }
+  label {
+    color: #9E9E9E;
+  }
+  ::placeholder {
+    color: #9E9E9E;
+  }
+
+  .page-title-wrapper {
+    .page-title {
+      font-size: 32px;
+      @media only screen and (max-width: 767px) {
+        font-size: 27px;
+      }
+    }
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+}
+  .page-wrapper {
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    border-radius: 10px;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .banner-wrapper {
+    margin-top: 75px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    @media only screen and (min-width: 1024px) {
+      .desktop {
+        display: block;
+      }
+      .tablet {
+        display: none;
+      }
+      .mobile {
+        display: none;
+      }
+      }
+    @media only screen and (max-width: 1023px) {
+      .desktop {
+        display: none;
+      }
+      .tablet {
+        display: block;
+      }
+      .mobile {
+        display: none;
+      }
+      }
+    @media only screen and (max-width: 767px) {
+      .desktop {
+        display: none;
+      }
+      .tablet {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+      }
+  }
+}
+
+// modal 
+.modal-interest-wrapper {
+.img-wrapper {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto 15px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+  .title {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .text {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+}
+.form-wrapper {
+  .btn {
+    // margin-bottom: 15px;
+  }
+  .text {
+    margin-bottom: 0;
+  }
+}
+input#timepicker {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.input-group-append button {
+  border: 1px solid #dee2e6!important;
+  display: none;
+}
+}

@@ -1,0 +1,71 @@
+.addon-item {
+  .card {
+    cursor: pointer;
+  }
+
+  .card-input-element:checked+.card {
+    // border: 2px solid var(--primary);
+    background: linear-gradient(180deg, #359cef 0, #1f8de7 100%);
+    -webkit-transition: border .3s;
+    -o-transition: border .3s;
+    transition: border .3s;
+
+    .title,
+    .text {
+      color: #fff !important;
+    }
+  }
+}
+
+.list-upgrade-venue {
+  max-height: 300px;
+  overflow: auto;
+
+  .list-group-item {
+    cursor: pointer;
+
+    .venue-item {
+      cursor: pointer;
+
+      .img-venue {
+        width: 100%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        color: #232323;
+      }
+    }
+  }
+
+  .input-element {
+    position: absolute;
+    z-index: 99;
+    right: 25px;
+    top: 46px;
+    transform: scale(1.5);
+
+    &:checked {
+      &.venue-item {
+        // border: 2px solid var(--primary);
+        background: linear-gradient(180deg, #359cef 0, #1f8de7 100%);
+        -webkit-transition: border .3s;
+        -o-transition: border .3s;
+        transition: border .3s;
+      }
+    }
+  }
+
+}

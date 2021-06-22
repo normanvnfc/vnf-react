@@ -1,0 +1,10 @@
+.input-group {
+  .form-control {}
+
+  .input-group-append {
+    span {
+      background-color: transparent;
+      border-left: none;
+    }
+  }
+}

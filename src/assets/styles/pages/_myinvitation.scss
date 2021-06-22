@@ -1,0 +1,46 @@
+.myinvitation {
+  .myinvitation-item {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
+    .content-wrapper {
+      .date-wrapper {
+      }
+      .badge-wrapper {
+        .badge {
+          padding: 7px 15px;
+          border-radius: 8px;
+        }
+      }
+      .static-wrapper {
+        height: 160px;
+        @media only screen and (max-width: 768px) {
+          height: auto;
+        }
+      }
+      .btn-wrapper {
+        button {
+          width: 100px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .inline-flex-wrapper {
+          margin: 10px 0;
+        }
+        .venue-img {
+          height: 225px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .top,
+        .bottom {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

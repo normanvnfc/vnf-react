@@ -1,0 +1,116 @@
+.contactam {
+  .page-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #353535;
+  }
+
+  .plan {
+    margin: 50px;
+    height: 525px;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+      height: auto;
+    }
+
+    .card {
+      height: 100%;
+    }
+
+    .title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;
+      color: #000000;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+
+    .subtitle {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 27px;
+      color: #000000;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: normal;
+      }
+    }
+
+    .text {
+
+      @media only screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+  }
+
+  .amwrapper {
+    text-align: center;
+    background: #F7F7F7;
+    margin-left: -65px;
+
+    @media only screen and (max-width: 767px) {
+      margin: auto;
+    }
+
+    .title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .subtitle {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .img-wrapper {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    .contact-icon {
+      i {
+        font-size: 42.631px;
+        line-height: 49px;
+        color: #00A451;
+      }
+    }
+
+    .btn-wrapper {
+      width: 165px;
+      margin: 0 auto;
+    }
+  }
+
+  .btn {
+    i {
+      font-size: 20px;
+    }
+  }
+}

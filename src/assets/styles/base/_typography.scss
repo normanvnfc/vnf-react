@@ -1,0 +1,122 @@
+/**
+ * Basic typography style for copy text
+ */
+// =================== Title ===================
+.h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.5px;
+}
+
+// =================== Subtitle ===================
+.subtitle1 {
+  font-family: $font-montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.subtitle2 {
+  font-family: $font-montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+// =================== Body ===================
+.text-body1 {
+  font-family: $font-openSans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.text-body2 {
+  font-family: $font-montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.text-body1 {
+  font-family: $font-openSans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+// =================== Button ===================
+.text-button {
+  font-family: $font-openSans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.text-button-large {
+  font-family: $font-openSans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+// =================== Caption ===================
+.text-caption {
+  font-family: $font-openSans;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.text-small {
+  font-family: $font-openSans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.text-tiny {
+  font-family: $font-openSans;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+// =================== Caption ===================
+.text-card-title1 {
+  font-family: $font-montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.text-card-title2 {
+  font-family: $font-montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.text-card-detail {
+  font-family: $font-montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}

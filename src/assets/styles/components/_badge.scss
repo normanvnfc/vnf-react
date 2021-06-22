@@ -1,0 +1,95 @@
+.badge-wrapper {
+  .badge {
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+
+    &.white {
+      color: #BCBCBC;
+      border: 2px solid #BCBCBC;
+    }
+
+    &.approved {
+      color: #fff;
+      background: #4caf50;
+    }
+
+    &.live {
+      color: #359CEF;
+      border: 2px solid #359CEF;
+    }
+
+    &.pending {
+      color: #fff;
+      background: #F26C5B;
+      border: 2px solid #F26C5B;
+    }
+  }
+}
+
+.badge {
+  &.badge-primary {
+    background-color: #359CEF;
+  }
+
+  &.badge-outline-primary {
+    color: #359CEF;
+    border: 1px solid #359CEF;
+  }
+}
+
+.badge {
+
+  i {
+    margin-right: 5px;
+  }
+
+  &.scheduled {
+    color: #ffc107;
+    background-color: #fff;
+    border: 2px solid #ffc107;
+  }
+
+  &.unpaid {
+    color: #fff;
+    background-color: #f05b47;
+    border: 2px solid #f05b47;
+  }
+
+  &.paid {
+    color: #fff;
+    background-color: #4caf50;
+    border: 2px solid #4caf50;
+  }
+
+  &.declined {
+    color: #f05b47;
+    background-color: #fff;
+    border: 2px solid #f05b47;
+  }
+
+  &.completed {
+    color: #fff;
+    background-color: #4caf50;
+    border: 2px solid #4caf50;
+  }
+
+  &.reviewed {
+    color: #11111f;
+    background-color: #fff;
+    border: 2px solid #11111f;
+  }
+
+  &.read {
+    color: #0eb6dd;
+    background-color: #fff;
+    border: 2px solid #0eb6dd;
+  }
+
+  &.unread {
+    color: #e23939;
+    background-color: #fff;
+    border: 2px solid #e23939;
+  }
+}

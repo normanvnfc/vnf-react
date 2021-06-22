@@ -1,0 +1,135 @@
+.quotation {
+  .head-button-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+}
+
+.invoice-component {
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 15px;
+
+  .line {
+    border-bottom: 1px solid #EFEFEF;
+    padding: 10px 0;
+  }
+
+  .custom-table-invoice {
+    .row {
+      margin-bottom: 10px;
+
+      .col-5,
+      .col-3,
+      .col-2,
+      .col-1 {
+        padding-right: 0;
+      }
+    }
+
+    .custom-title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #858585;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .input-head {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #858585;
+    }
+
+    .input-item {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #858585;
+
+      i {
+        font-size: 30px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .total-box {
+    background: #F5F8F9;
+    border-radius: 7px;
+    padding: 15px 25px;
+    margin-top: 25px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 5px;
+    }
+
+    .total-item {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #858585;
+      }
+
+      .num {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #858585;
+      }
+    }
+  }
+
+  .single-item {
+    @media only screen and (max-width: 767px) {
+      display: flex;
+    }
+
+    .item {
+      padding: 0 5px;
+
+      &:first-child {
+        padding-left: 15px;
+      }
+
+      &:last-child {
+        padding-right: 15px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 10px;
+        padding: 0 15px;
+      }
+    }
+
+    .input-head {
+      @media only screen and (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+  }
+}

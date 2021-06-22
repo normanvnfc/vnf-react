@@ -1,0 +1,31 @@
+// @charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins",
+"abstracts/_placeholders";
+
+// 2. Vendors
+@import "../node_modules/bootstrap/dist/css/bootstrap.css"
+// , "vendor/icomoon",
+// "vendor/upload"
+;
+
+// 3. Base stuff
+@import "base/base"
+, "base/fonts"
+, "base/typography"
+, "base/helpers"
+;
+
+// // 4. Layout-related sections
+@import "layout/header", "layout/footer";
+
+// // 5. Components
+@import "components/button", "components/nav", "components/input",
+"components/table", "components/badge", "components/checkbox", "components/stepper", "components/flip";
+
+// 6. Page-specific styles
+@import "pages/why";
+
+// // 7. Themes
+// @import "themes/default";

@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// ==================== Fonts ====================
+/// Text Font
+/// @type List
+$font-openSans: 'Open Sans',
+sans-serif !default;
+
+/// Title Font
+/// @type List
+$font-montserrat: 'Montserrat',
+sans-serif !default;
+
+// ==================== Color ==================== 
+/// Primary Color
+/// @type Color
+$color-royalBlue: #2794C1 !default;
+
+/// Accent Color
+/// @type Color
+$color-alicelBlue: #F1F9FF !default;
+
+/// Brand/Quantitative Color
+/// @type Color
+$color-sun: #F58138 !default;
+/// @type Color
+$color-shadowGreen: #8DB9AF !default;
+
+/// Feedback Color
+/// @type Color
+$color-error: #E44D39 !default;
+/// @type Color
+$color-warning: #E79728 !default;
+/// @type Color
+$color-success: #2ECC71 !default;
+/// @type Color
+$color-notice: #505058 !default;
+
+/// Dark/Bright Color
+/// @type Color
+$color-black: #000000 !default;
+/// @type Color
+$color-nero: #2D2D2D !default;
+/// @type Color
+$color-abbey: #505058 !default;
+/// @type Color
+$color-spunPearl: #A5A6B0 !default;
+/// @type Color
+$color-alto: #D4D4D4 !default;
+/// @type Color
+$color-alabaster: #F8F8F8 !default;
+
+/// Base/Surfave Color
+/// @type Color
+$color-white: #FFFFFF !default;
+/// @type Color
+$color-lilyWhite: #E8F7FE !default;
+/// @type Color
+$color-columbiaBlue: #BCE0FD !default;
+
+/// Gradient Color
+/// @type Color
+$color-gradient: linear-gradient(to bottom, #EEF9FB, #FFFFFF 50%) !default;
+
+/// Misc/Button Color
+/// @type Color
+$color-persimmon: #FA5F4A !default;
+/// @type Color
+$color-shakespeare: #43A6BC !default;
+
+/// Alternative Color
+/// @type Color
+$color-solid-black: #212B36 !default;
+$color-secondary-blue: #359CEF !default;
+$color-bright-blue: #179BD6 !default;
+$color-orange: #FF8257 !default;
+$color-secondary-orange: #EB8038 !default;
+$color-white-grey: #E1E1E1 !default;
+$color-secondary-grey: #858585 !default;
+$color-soft-white: #F4F4F4 !default;
+$color-soft-grey: #F9F9F9 !default;
+$color-greyish: #929292 !default;
+$color-thin-grey: #EDEDED !default;
+$color-text-grey: #CBCBCB !default;
+$color-orange-bold: #F56C5B !default;
+$color-disabled: #C8CFD5 !default;
+$color-purple: #9A52C7 !default;
+$color-green: #4CAF50 !default;
+
+/// status state Color
+/// @type Color
+$color-waiting: $color-secondary-blue;
+/// @type Color
+$color-review: $color-purple;
+/// @type Color
+$color-canceled: $color-orange-bold;
+/// @type Color
+$color-scheduled: $color-green;
+/// @type Color
+$color-completed: $color-green;
+/// @type Color
+$color-finished: $color-purple;
+/// @type Color
+$color-pending: $color-purple;
+
+// ==================== Spacing ====================
+$spacing1: 8px;
+$spacing2: 16px;
+$spacing3: 24px;
+$spacing4: 32px;
+$spacing5: 48px;
+$spacing6: 64px;
+
+// ==================== Shadow ====================
+$shadow1: 0 1px 3px rgba(193, 193, 193, 0.12),
+0 1px 2px rgba(193, 193, 193, 0.24);
+$shadow2: 0px 7px 15px 0px rgba(0, 0, 0, 0.1);
+
+// ==================== Curve ====================
+$curve1: 8px;
+$curve2: 16px // Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 768px,
+//   md: 992px,
+//   lg: 1280px,
+//   xl: 1400px,
+// ) !default;
+
+// $blue: #007bff !default;
+// $indigo: #6610f2 !default;
+// $purple: #6f42c1 !default;
+// $pink: #e83e8c !default;
+// $red: #dc3545 !default;
+// $orange: #fd7e14 !default;
+// $yellow: #ffc107 !default;
+// $green: #28a745 !default;
+// $teal: #20c997 !default;
+// $cyan: #17a2b8 !default;
+
+// $primary: $blue !default;
+// $secondary: $gray-600 !default;
+// $success: $green !default;
+// $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+// $light: $gray-100 !default;
+// $dark: $gray-800 !default;
+
+// $primary: #359CEF;
+// $primary-hover: #57B2FB;
+// $secondary: #FFFFFF;
+// $secondary-hover: #F7F7F7;
+// $warning:#FF8257;
+// $warning-hover: #FF9D7B;
+// $success: #4CAF50;
+// $success-hover: #76C579;
+// $danger: #F16C5C;
+// $danger-hover: #F48D80;

@@ -1,77 +1,101 @@
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
-import logo from '../../assets/img/nav-logo.png';
+// import Image from 'next/image'
 
-const Countries = [
-  {
-    id: 'a1',
-    ref: '#/a1',
-    name: 'Singapore',
-    src: "https://static-staging.venuerific.com/packs/media/img/sg-99531698f90954f8c0dcb80daecdc2d8.png"
-  },
-  {
-    id: 'a2',
-    ref: '#/a2',
-    name: 'Malaysia',
-    src: "https://static-staging.venuerific.com/packs/media/img/my-221a445c68db7c9ff4cbb5d9ba7db6be.png"
-  },
-  {
-    id: 'a3',
-    ref: '#/a3',
-    name: 'Indonesia',
-    src: "https://static-staging.venuerific.com/packs/media/img/id-81394ed473d60bcc17db29d463dff7d6.png"
-  },
-  {
-    id: 'a4',
-    ref: '#/a4',
-    name: 'Philippines',
-    src: "https://static-staging.venuerific.com/packs/media/img/ph-98aa829210389c80ee7eece4bdc3dd91.png"
-  },
-  {
-    id: 'a5',
-    ref: '#/a5',
-    name: 'Hong Kong',
-    src: "https://static-staging.venuerific.com/packs/media/img/hk-585fb76ecf1cf61fd5d823417b123b7a.png"
-  }
-]
+export default function Header() {
 
-const Header = () => {
   return (
-    <header className="header">
-      <Navbar className="nav-main navbar navbar-expand-lg bg-white shadow-sm">
-        <Container>
-          <Navbar.Brand className="logo" href="#home">
-            <figure className="mb-0 logo">
-              <img src={logo} alt="" />
-            </figure>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <NavDropdown title="Dropdown" id="country-list">
-                {Countries.map((country) =>
-                  <NavDropdown.Item href={country.ref} key={country.id}>
-                    <img className="shadow-sm flag-img"
-                      src={country.src} alt="" />
-                    {country.name}
-                  </NavDropdown.Item>
-                )}
-              </NavDropdown>
-              <Nav.Link href="#home">Venue</Nav.Link>
-              <Nav.Link href="#link">Inspiration</Nav.Link>
-              <NavDropdown title="Solutions" id="solutions">
-                <NavDropdown.Item href="#action/3.1">Venue Lead Generation</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Content Production</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Venuerific Pay</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">The Virtual Background</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">The Virtual Wedding</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">Venue Management Cloud Solution</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </header>
+    <div>
+      <header class="header container">
+        <nav class="nav-main navbar navbar-expand-lg">
+          <div class="container">
+            <a class="logo" href="https://www.venuerific.com/sg" >
+              <figure class="mb-0 logo">
+                <img class="light" src="/img/nav-logo.png" alt="Venuerific" />
+                {/* <img class="dark" src="img/nav-logo-white.png" alt="Venuerific" /> */}
+              </figure>
+            </a>
+            {/* {% include "partials/content/navigation-cselector.html" %} */}
+
+            <div class="justify-content-between w-100  d-none d-sm-flex">
+              <div class="mr-auto menu navbar-expand d-none d-lg-block">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/sg/search">Venues</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="https://blog.venuerific.com/">Inspiration</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/#" role="button" aria-haspopup="true"
+                      aria-expanded="false">
+                      Solutions
+                      <i class="fa fa-chevron-down ml-1" style={{ fontSize: "10px" }}></i>
+                    </a>
+                    {/* {% include "partials/content/navigation-dropdown.html" %} */}
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="/sg/productivity-solutions-grant">PSG</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ml-auto right-menu navbar-expand d-none d-sm-block">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="list-venue nav-link" href="/why">
+                      <i class="fa fa-map-marker text-danger pr-1"></i> Why List
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="login nav-link shadow-none px-3 font-weight-bold"
+                      href="https://www.venuerific.com/users/login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="signup nav-link font-weight-bold gtm_event_onclick" data-toggle="modal"
+                      data-gtm-event-name="SignUpFlow - ClickSignUpHeader" href="#how-it-works">Sign up</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav d-flex justify-content-around d-block d-lg-none">
+                <li class="nav-item">
+                  <a class="nav-link" href="/sg/search">Venues</a>
+                </li>
+                <li class="nav-item">
+                  <a rel="noreferrer" class="nav-link"  href="https://blog.venuerific.com/">Inspiration</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Solutions
+                    <i class="fa fa-chevron-down ml-1"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/sg/venues/why">Venue Lead Generation</a>
+                    <a class="dropdown-item" href="/contentproduction?country=sg">Content Production</a>
+                    <a class="dropdown-item" href="/sg/venuerific-pay">Venuerific Pay</a>
+                    <a  class="dropdown-item" rel="noreferrer" href="https://www.thevirtualbackground.com/">The
+                      Virtual Background</a>
+                    <a class="dropdown-item"  href="https://thevirtualwedding.co">The Virtual Wedding</a>
+                    <a class="dropdown-item text-muted" href="/#">Venue Management Cloud Solution <br /> (Coming
+                      Soon)</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a rel="noreferrer" class="nav-link"  href="/sg/productivity-solutions-grant">PSG</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
   )
 }
-
-export default Header;
